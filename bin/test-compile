@@ -1,0 +1,5 @@
+#!/bin/bash
+# usage: bin/test-compile <build-dir> <cache-dir> <env-dir>
+
+testpack=$(cd "$(dirname $0)/.." && pwd)
+${testpack}/bin/compile "${1}" "${2}" "${3}"
